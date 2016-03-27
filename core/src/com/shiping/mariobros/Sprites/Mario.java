@@ -27,7 +27,7 @@ import com.shiping.mariobros.Sprites.Enemies.Turtle;
 // Hi Junhao, hello world
 
 public class Mario extends Sprite {
-    public enum State { FALLING, JUMPING, STANDING, RUNNING, GROWING, DEAD };
+    public enum State { FALLING, JUMPING, STANDING, GROWING, DEAD };
     public State currentState;
     public State previousState;
     public World world;

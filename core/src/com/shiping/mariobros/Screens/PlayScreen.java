@@ -81,6 +81,7 @@ public class PlayScreen implements Screen {
         gamecam.position.set(gamePort.getWorldWidth() / 2, gamePort.getWorldHeight() / 2, 0);
 
         world = new World(new Vector2(0, -10), true);
+
         // Allows for debug lines of our box2d world
         b2dr = new Box2DDebugRenderer();
 
@@ -162,7 +163,7 @@ public class PlayScreen implements Screen {
 
         // update our gamecam with correct coordinates after changes
         gamecam.update();
-        //tell our renderer to draw only what our camera can see in our game world.
+        // tell our renderer to draw only what our camera can see in our game world.
         renderer.setView(gamecam);
     }
 

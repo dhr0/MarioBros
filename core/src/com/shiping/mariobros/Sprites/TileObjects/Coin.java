@@ -34,6 +34,7 @@ public class Coin extends com.shiping.mariobros.Sprites.TileObjects.InteractiveT
             MarioBros.manager.get("audio/sounds/bump.wav", Sound.class).play();
         } else {
             getCell().setTile(tileSet.getTile(BLANK_COIN));
+            // Some tiles contain the key "mushroom" so mushrooms will be spawned when hit
             if (object.getProperties().containsKey("mushroom")) {
                 screen.spawnItem(new ItemDef(new Vector2(body.getPosition().x, body.getPosition().y + 16 / MarioBros.PPM),
                         Mushroom.class));

@@ -23,6 +23,7 @@ import com.shiping.mariobros.Sprites.Enemies.Turtle;
 /**
  * Created by shiping on 28/2/16.
  */
+// I add this line here to test
 public class Mario extends Sprite {
     public enum State { FALLING, JUMPING, STANDING, RUNNING, GROWING, DEAD };
     public State currentState;
